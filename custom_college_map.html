@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_42a967aa493566358f5e49b644ff313d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_42a967aa493566358f5e49b644ff313d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_42a967aa493566358f5e49b644ff313d = L.map(
+                "map_42a967aa493566358f5e49b644ff313d",
+                {
+                    center: [42.0, -120.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_018d2ceb83132c5956ea89a66297db4b = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_42a967aa493566358f5e49b644ff313d);
+        
+    
+            var marker_22db84e517d4f84963f18a607b85f057 = L.marker(
+                [33.6411, -117.9187],
+                {}
+            ).addTo(map_42a967aa493566358f5e49b644ff313d);
+        
+    
+            var icon_a9fe4cf8458f8138b46eac8480ea49dc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_22db84e517d4f84963f18a607b85f057.setIcon(icon_a9fe4cf8458f8138b46eac8480ea49dc);
+        
+    
+        var popup_d0816a514fca6d5caf95390733fe0f9d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_55fa5712d53fcc0599233a9cdf7ac94e = $(`<div id="html_55fa5712d53fcc0599233a9cdf7ac94e" style="width: 100.0%; height: 100.0%;">Orange Coast College, Costa Mesa, California</div>`)[0];
+            popup_d0816a514fca6d5caf95390733fe0f9d.setContent(html_55fa5712d53fcc0599233a9cdf7ac94e);
+        
+
+        marker_22db84e517d4f84963f18a607b85f057.bindPopup(popup_d0816a514fca6d5caf95390733fe0f9d)
+        ;
+
+        
+    
+    
+            var marker_824fa8d8c1035158f91b4c727490786f = L.marker(
+                [42.8713, -112.4455],
+                {}
+            ).addTo(map_42a967aa493566358f5e49b644ff313d);
+        
+    
+            var icon_4912579189cdcbdaed314b53dce9d007 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_824fa8d8c1035158f91b4c727490786f.setIcon(icon_4912579189cdcbdaed314b53dce9d007);
+        
+    
+        var popup_1907beec632e789ec0182ac9a0b5f7f8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4fb1e2aae242703e0ad12ce56a11cb61 = $(`<div id="html_4fb1e2aae242703e0ad12ce56a11cb61" style="width: 100.0%; height: 100.0%;">Idaho State University, Pocatello, Idaho</div>`)[0];
+            popup_1907beec632e789ec0182ac9a0b5f7f8.setContent(html_4fb1e2aae242703e0ad12ce56a11cb61);
+        
+
+        marker_824fa8d8c1035158f91b4c727490786f.bindPopup(popup_1907beec632e789ec0182ac9a0b5f7f8)
+        ;
+
+        
+    
+    
+            var marker_99aa86e221960c15968ea68d587f757b = L.marker(
+                [47.6588, -117.426],
+                {}
+            ).addTo(map_42a967aa493566358f5e49b644ff313d);
+        
+    
+            var icon_31926bbd6bfbaf41bb391e16dd762372 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_99aa86e221960c15968ea68d587f757b.setIcon(icon_31926bbd6bfbaf41bb391e16dd762372);
+        
+    
+        var popup_c19a95d9232ff9399a75c857cfc76db1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_066bab144d602e2854e1375e683ec895 = $(`<div id="html_066bab144d602e2854e1375e683ec895" style="width: 100.0%; height: 100.0%;">Spokane Community College, Spokane, Washington</div>`)[0];
+            popup_c19a95d9232ff9399a75c857cfc76db1.setContent(html_066bab144d602e2854e1375e683ec895);
+        
+
+        marker_99aa86e221960c15968ea68d587f757b.bindPopup(popup_c19a95d9232ff9399a75c857cfc76db1)
+        ;
+
+        
+    
+    
+            var marker_1becde2cb0b64a079605bd33e7cbb1ba = L.marker(
+                [47.6062, -122.3321],
+                {}
+            ).addTo(map_42a967aa493566358f5e49b644ff313d);
+        
+    
+            var icon_ea6a2de7fa771dc4e5b9b1582cfba790 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_1becde2cb0b64a079605bd33e7cbb1ba.setIcon(icon_ea6a2de7fa771dc4e5b9b1582cfba790);
+        
+    
+        var popup_9bd9fa504da2f355301c3fa9f828c9bf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bfd1b8c908e8e441a7896ca02811b975 = $(`<div id="html_bfd1b8c908e8e441a7896ca02811b975" style="width: 100.0%; height: 100.0%;">South Seattle Community College, Seattle, Washington</div>`)[0];
+            popup_9bd9fa504da2f355301c3fa9f828c9bf.setContent(html_bfd1b8c908e8e441a7896ca02811b975);
+        
+
+        marker_1becde2cb0b64a079605bd33e7cbb1ba.bindPopup(popup_9bd9fa504da2f355301c3fa9f828c9bf)
+        ;
+
+        
+    
+    
+            var marker_e85c5561619e490fa96dd33f386dd725 = L.marker(
+                [47.9781, -122.2021],
+                {}
+            ).addTo(map_42a967aa493566358f5e49b644ff313d);
+        
+    
+            var icon_b010f9ba8c497a8fb827748fe5674dcb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_e85c5561619e490fa96dd33f386dd725.setIcon(icon_b010f9ba8c497a8fb827748fe5674dcb);
+        
+    
+        var popup_7d527142782bb555aa7d4248b0f88f61 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ccd6526fe7a374645903d7ad5f5da3d4 = $(`<div id="html_ccd6526fe7a374645903d7ad5f5da3d4" style="width: 100.0%; height: 100.0%;">Everett Community College, Everett, Washington</div>`)[0];
+            popup_7d527142782bb555aa7d4248b0f88f61.setContent(html_ccd6526fe7a374645903d7ad5f5da3d4);
+        
+
+        marker_e85c5561619e490fa96dd33f386dd725.bindPopup(popup_7d527142782bb555aa7d4248b0f88f61)
+        ;
+
+        
+    
+    
+            var marker_4b67ed031a5037374dc29747d26c5e44 = L.marker(
+                [47.1718, -122.5185],
+                {}
+            ).addTo(map_42a967aa493566358f5e49b644ff313d);
+        
+    
+            var icon_2073a3e7d79e45592d09d7ca58062823 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_4b67ed031a5037374dc29747d26c5e44.setIcon(icon_2073a3e7d79e45592d09d7ca58062823);
+        
+    
+        var popup_8cbc35946b9702903e4fd700d1d870fd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_974490df18f67e5037332f4390fe854e = $(`<div id="html_974490df18f67e5037332f4390fe854e" style="width: 100.0%; height: 100.0%;">Clover Park Technical College, Lakewood, Washington</div>`)[0];
+            popup_8cbc35946b9702903e4fd700d1d870fd.setContent(html_974490df18f67e5037332f4390fe854e);
+        
+
+        marker_4b67ed031a5037374dc29747d26c5e44.bindPopup(popup_8cbc35946b9702903e4fd700d1d870fd)
+        ;
+
+        
+    
+    
+            var marker_1c400e8595206ab575dc06a0ee4ba85b = L.marker(
+                [47.1301, -119.2781],
+                {}
+            ).addTo(map_42a967aa493566358f5e49b644ff313d);
+        
+    
+            var icon_3524d80462e7346d0a99c123fdb942da = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_1c400e8595206ab575dc06a0ee4ba85b.setIcon(icon_3524d80462e7346d0a99c123fdb942da);
+        
+    
+        var popup_0f9062a439d610b7376bb91a47fea8ca = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cf3ad2ffada82b79c615cd6e86e96604 = $(`<div id="html_cf3ad2ffada82b79c615cd6e86e96604" style="width: 100.0%; height: 100.0%;">Big Bend Community College, Moses Lake, Washington</div>`)[0];
+            popup_0f9062a439d610b7376bb91a47fea8ca.setContent(html_cf3ad2ffada82b79c615cd6e86e96604);
+        
+
+        marker_1c400e8595206ab575dc06a0ee4ba85b.bindPopup(popup_0f9062a439d610b7376bb91a47fea8ca)
+        ;
+
+        
+    
+    
+            var marker_7ecd46a8ecfb5934e550f060b98f9155 = L.marker(
+                [44.0521, -123.0868],
+                {}
+            ).addTo(map_42a967aa493566358f5e49b644ff313d);
+        
+    
+            var icon_fda959f9de8ef930269abdf184030041 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_7ecd46a8ecfb5934e550f060b98f9155.setIcon(icon_fda959f9de8ef930269abdf184030041);
+        
+    
+        var popup_aee37f9c0e04f0ef72e4f2d552d41899 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9e346fbc5627917ebacf9464bad138c5 = $(`<div id="html_9e346fbc5627917ebacf9464bad138c5" style="width: 100.0%; height: 100.0%;">Lane Community College, Eugene, Oregon</div>`)[0];
+            popup_aee37f9c0e04f0ef72e4f2d552d41899.setContent(html_9e346fbc5627917ebacf9464bad138c5);
+        
+
+        marker_7ecd46a8ecfb5934e550f060b98f9155.bindPopup(popup_aee37f9c0e04f0ef72e4f2d552d41899)
+        ;
+
+        
+    
+    
+            var marker_bd283f75e5e1d73d45070baa7b35638d = L.marker(
+                [45.5152, -122.6784],
+                {}
+            ).addTo(map_42a967aa493566358f5e49b644ff313d);
+        
+    
+            var icon_a2fecbd17616642f102de6653b9fe25b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_bd283f75e5e1d73d45070baa7b35638d.setIcon(icon_a2fecbd17616642f102de6653b9fe25b);
+        
+    
+        var popup_600990fe827f93d804ba98215e77dda4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ceb45d7f578ae3c249660ddff95aaba4 = $(`<div id="html_ceb45d7f578ae3c249660ddff95aaba4" style="width: 100.0%; height: 100.0%;">Portland Community College, Portland, Oregon</div>`)[0];
+            popup_600990fe827f93d804ba98215e77dda4.setContent(html_ceb45d7f578ae3c249660ddff95aaba4);
+        
+
+        marker_bd283f75e5e1d73d45070baa7b35638d.bindPopup(popup_600990fe827f93d804ba98215e77dda4)
+        ;
+
+        
+    
+    
+            var marker_53cd98d3b8106bd6b9cc57dc7839bada = L.marker(
+                [38.5816, -121.4944],
+                {}
+            ).addTo(map_42a967aa493566358f5e49b644ff313d);
+        
+    
+            var icon_7e3479ac6d78abdfd5f83aec4dc5de90 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_53cd98d3b8106bd6b9cc57dc7839bada.setIcon(icon_7e3479ac6d78abdfd5f83aec4dc5de90);
+        
+    
+        var popup_50fba08195bb5bb59298f2eade1beb88 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_15d39e447aea33c29017026908e4de50 = $(`<div id="html_15d39e447aea33c29017026908e4de50" style="width: 100.0%; height: 100.0%;">Sacramento City College, Sacramento, California</div>`)[0];
+            popup_50fba08195bb5bb59298f2eade1beb88.setContent(html_15d39e447aea33c29017026908e4de50);
+        
+
+        marker_53cd98d3b8106bd6b9cc57dc7839bada.bindPopup(popup_50fba08195bb5bb59298f2eade1beb88)
+        ;
+
+        
+    
+    
+            var marker_b111780c34a3886206ec4c8833297cad = L.marker(
+                [37.7749, -122.4194],
+                {}
+            ).addTo(map_42a967aa493566358f5e49b644ff313d);
+        
+    
+            var icon_8a4eecf711c16fc959a3be0f9567a93b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_b111780c34a3886206ec4c8833297cad.setIcon(icon_8a4eecf711c16fc959a3be0f9567a93b);
+        
+    
+        var popup_0c9d8154d9af254820276115b8328079 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2b1c9d3302f0286401d1cdd84031526b = $(`<div id="html_2b1c9d3302f0286401d1cdd84031526b" style="width: 100.0%; height: 100.0%;">City College of San Francisco, San Francisco, California</div>`)[0];
+            popup_0c9d8154d9af254820276115b8328079.setContent(html_2b1c9d3302f0286401d1cdd84031526b);
+        
+
+        marker_b111780c34a3886206ec4c8833297cad.bindPopup(popup_0c9d8154d9af254820276115b8328079)
+        ;
+
+        
+    
+    
+            var marker_7c02d3826d52efe156c92f75d4aaed97 = L.marker(
+                [37.7652, -122.2416],
+                {}
+            ).addTo(map_42a967aa493566358f5e49b644ff313d);
+        
+    
+            var icon_86187990430f380ba323f3c8f1a81da3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_7c02d3826d52efe156c92f75d4aaed97.setIcon(icon_86187990430f380ba323f3c8f1a81da3);
+        
+    
+        var popup_928901863615601923569e9fe011f4d8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_34993d50ce497a92e308bc393eb3c01e = $(`<div id="html_34993d50ce497a92e308bc393eb3c01e" style="width: 100.0%; height: 100.0%;">College of Alameda, Alameda, California</div>`)[0];
+            popup_928901863615601923569e9fe011f4d8.setContent(html_34993d50ce497a92e308bc393eb3c01e);
+        
+
+        marker_7c02d3826d52efe156c92f75d4aaed97.bindPopup(popup_928901863615601923569e9fe011f4d8)
+        ;
+
+        
+    
+    
+            var marker_d9d10923225ec925046286eb098b588c = L.marker(
+                [37.563, -122.3255],
+                {}
+            ).addTo(map_42a967aa493566358f5e49b644ff313d);
+        
+    
+            var icon_dd3162f551a05e6313b0227d87ea8dc2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_d9d10923225ec925046286eb098b588c.setIcon(icon_dd3162f551a05e6313b0227d87ea8dc2);
+        
+    
+        var popup_0b7af0d00d7e464e2c14d412b41d3c57 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_907592abb53cd18f93b5ece0ed0c8972 = $(`<div id="html_907592abb53cd18f93b5ece0ed0c8972" style="width: 100.0%; height: 100.0%;">College of San Mateo, San Mateo, California</div>`)[0];
+            popup_0b7af0d00d7e464e2c14d412b41d3c57.setContent(html_907592abb53cd18f93b5ece0ed0c8972);
+        
+
+        marker_d9d10923225ec925046286eb098b588c.bindPopup(popup_0b7af0d00d7e464e2c14d412b41d3c57)
+        ;
+
+        
+    
+    
+            var marker_233f96c177bf7076ca11d6f9441abe13 = L.marker(
+                [36.8525, -121.4016],
+                {}
+            ).addTo(map_42a967aa493566358f5e49b644ff313d);
+        
+    
+            var icon_da2cc9bc1fdce7e0a20996677bcf0d6b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_233f96c177bf7076ca11d6f9441abe13.setIcon(icon_da2cc9bc1fdce7e0a20996677bcf0d6b);
+        
+    
+        var popup_c73179d6693861de0c8ffac8f7f51671 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ef30bcc47e95b9be33527fe714fc34db = $(`<div id="html_ef30bcc47e95b9be33527fe714fc34db" style="width: 100.0%; height: 100.0%;">Gavilan College, Hollister, California</div>`)[0];
+            popup_c73179d6693861de0c8ffac8f7f51671.setContent(html_ef30bcc47e95b9be33527fe714fc34db);
+        
+
+        marker_233f96c177bf7076ca11d6f9441abe13.bindPopup(popup_c73179d6693861de0c8ffac8f7f51671)
+        ;
+
+        
+    
+    
+            var marker_8ed9579c55cf74ad900cdc1dcfc9e385 = L.marker(
+                [34.1425, -118.2551],
+                {}
+            ).addTo(map_42a967aa493566358f5e49b644ff313d);
+        
+    
+            var icon_a07113752f678794c8549ffbbd993d18 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_8ed9579c55cf74ad900cdc1dcfc9e385.setIcon(icon_a07113752f678794c8549ffbbd993d18);
+        
+    
+        var popup_86783c643199940e9bba10436dbe06a2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9982f67bec62f1e6f0274365ef39fc98 = $(`<div id="html_9982f67bec62f1e6f0274365ef39fc98" style="width: 100.0%; height: 100.0%;">Glendale Community College, Glendale, California</div>`)[0];
+            popup_86783c643199940e9bba10436dbe06a2.setContent(html_9982f67bec62f1e6f0274365ef39fc98);
+        
+
+        marker_8ed9579c55cf74ad900cdc1dcfc9e385.bindPopup(popup_86783c643199940e9bba10436dbe06a2)
+        ;
+
+        
+    
+    
+            var marker_8cb6db30cf3fb1f7b6e1697b377f2e00 = L.marker(
+                [33.7701, -118.1937],
+                {}
+            ).addTo(map_42a967aa493566358f5e49b644ff313d);
+        
+    
+            var icon_bf901f4d3d7866a7cdd1e92359274ccb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_8cb6db30cf3fb1f7b6e1697b377f2e00.setIcon(icon_bf901f4d3d7866a7cdd1e92359274ccb);
+        
+    
+        var popup_4ed48cac177f0a30613b3fcd2feeeba3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d34a1ac7d3b04cfc032927195bea9413 = $(`<div id="html_d34a1ac7d3b04cfc032927195bea9413" style="width: 100.0%; height: 100.0%;">Long Beach City College, Long Beach, California</div>`)[0];
+            popup_4ed48cac177f0a30613b3fcd2feeeba3.setContent(html_d34a1ac7d3b04cfc032927195bea9413);
+        
+
+        marker_8cb6db30cf3fb1f7b6e1697b377f2e00.bindPopup(popup_4ed48cac177f0a30613b3fcd2feeeba3)
+        ;
+
+        
+    
+    
+            var marker_e64f5f02c9d8f1b93c50c1e74f9290f3 = L.marker(
+                [34.0219, -118.3965],
+                {}
+            ).addTo(map_42a967aa493566358f5e49b644ff313d);
+        
+    
+            var icon_fd68639424ca76ef86a9191333dbe947 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_e64f5f02c9d8f1b93c50c1e74f9290f3.setIcon(icon_fd68639424ca76ef86a9191333dbe947);
+        
+    
+        var popup_e80b336dba44417cbb6ab45a6e1ae956 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_014600f6ef85fd403b673afd9c8ec0ca = $(`<div id="html_014600f6ef85fd403b673afd9c8ec0ca" style="width: 100.0%; height: 100.0%;">Los Angeles Airport College Center, Culver City, California</div>`)[0];
+            popup_e80b336dba44417cbb6ab45a6e1ae956.setContent(html_014600f6ef85fd403b673afd9c8ec0ca);
+        
+
+        marker_e64f5f02c9d8f1b93c50c1e74f9290f3.bindPopup(popup_e80b336dba44417cbb6ab45a6e1ae956)
+        ;
+
+        
+    
+    
+            var marker_a14a0a71d45ff259129b39e2d9063595 = L.marker(
+                [34.0203, -117.8653],
+                {}
+            ).addTo(map_42a967aa493566358f5e49b644ff313d);
+        
+    
+            var icon_41ac1f765a2e44ff7bb09b970a330edb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_a14a0a71d45ff259129b39e2d9063595.setIcon(icon_41ac1f765a2e44ff7bb09b970a330edb);
+        
+    
+        var popup_9ada25c0933354b273701b392edc4727 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b01073e24e754bf35e368bfa138c3ef9 = $(`<div id="html_b01073e24e754bf35e368bfa138c3ef9" style="width: 100.0%; height: 100.0%;">Mt San Antonio College, Walnut, California</div>`)[0];
+            popup_9ada25c0933354b273701b392edc4727.setContent(html_b01073e24e754bf35e368bfa138c3ef9);
+        
+
+        marker_a14a0a71d45ff259129b39e2d9063595.bindPopup(popup_9ada25c0933354b273701b392edc4727)
+        ;
+
+        
+    
+    
+            var marker_e8025e9e88291cce47801fc99cec5044 = L.marker(
+                [34.1064, -117.5931],
+                {}
+            ).addTo(map_42a967aa493566358f5e49b644ff313d);
+        
+    
+            var icon_513e53a8568085bdf807b592c74b7a77 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_e8025e9e88291cce47801fc99cec5044.setIcon(icon_513e53a8568085bdf807b592c74b7a77);
+        
+    
+        var popup_48eb24e12365579bc30b900f5573a880 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5f69ac1480ba47dc6c4d23f71ef1e5ac = $(`<div id="html_5f69ac1480ba47dc6c4d23f71ef1e5ac" style="width: 100.0%; height: 100.0%;">Chaffey Community College, Rancho Cucamonga, California</div>`)[0];
+            popup_48eb24e12365579bc30b900f5573a880.setContent(html_5f69ac1480ba47dc6c4d23f71ef1e5ac);
+        
+
+        marker_e8025e9e88291cce47801fc99cec5044.bindPopup(popup_48eb24e12365579bc30b900f5573a880)
+        ;
+
+        
+    
+    
+            var marker_b5ea1fd0219af00cb9c199a1740a3744 = L.marker(
+                [34.6868, -118.1542],
+                {}
+            ).addTo(map_42a967aa493566358f5e49b644ff313d);
+        
+    
+            var icon_686dffa23bb4638444ea952a2a2d6ec6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_b5ea1fd0219af00cb9c199a1740a3744.setIcon(icon_686dffa23bb4638444ea952a2a2d6ec6);
+        
+    
+        var popup_b6ab6010e3648b8650a0a1b5f9f56ee9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_04243d3179b55e61ce130ad27932fa14 = $(`<div id="html_04243d3179b55e61ce130ad27932fa14" style="width: 100.0%; height: 100.0%;">Antelope Valley College, Lancaster, California</div>`)[0];
+            popup_b6ab6010e3648b8650a0a1b5f9f56ee9.setContent(html_04243d3179b55e61ce130ad27932fa14);
+        
+
+        marker_b5ea1fd0219af00cb9c199a1740a3744.bindPopup(popup_b6ab6010e3648b8650a0a1b5f9f56ee9)
+        ;
+
+        
+    
+    
+            var marker_afbe9a51f839cbefa78dade354570a5d = L.marker(
+                [45.5946, -121.1787],
+                {}
+            ).addTo(map_42a967aa493566358f5e49b644ff313d);
+        
+    
+            var icon_1878cb61d0624857d1749c4d6cedb3f6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_afbe9a51f839cbefa78dade354570a5d.setIcon(icon_1878cb61d0624857d1749c4d6cedb3f6);
+        
+    
+        var popup_569e58cf5360664d80b372c152815f7a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4a1de865397d689cc5a6313bbfcd3fb3 = $(`<div id="html_4a1de865397d689cc5a6313bbfcd3fb3" style="width: 100.0%; height: 100.0%;">Columbia Gorge Community College, Dalles, Oregon</div>`)[0];
+            popup_569e58cf5360664d80b372c152815f7a.setContent(html_4a1de865397d689cc5a6313bbfcd3fb3);
+        
+
+        marker_afbe9a51f839cbefa78dade354570a5d.bindPopup(popup_569e58cf5360664d80b372c152815f7a)
+        ;
+
+        
+    
+</script>
+</html>
